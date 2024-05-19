@@ -14,7 +14,7 @@ global.location="Lahore,Pakistan."
 global.mongodb= process.env.MONGODB_URI || ""
 global.allowJids= process.env.ALLOW_JID || "null" 
 global.blockJids= process.env.BLOCK_JID || "null"
-global.DATABASE_URL = process.env.DATABASE_URL || ""
+global.DATABASE_URL = process.env.DATABASE_URL || "postgres://koyeb-adm:w9kva5enTzur@ep-small-union-a2j94m1b.eu-central-1.pg.koyeb.app/koyebdb"
 
 global.timezone= process.env.TZ || process.env.TIME_ZONE || "Asia/Karachi";
 global.github=process.env.GITHUB|| "https://github.com/SuhailTechInfo/Suhail-Md";
@@ -53,7 +53,7 @@ global.readmessagefrom = process.env.READ_MESSAGE_FROM || "null,923xxxxxxxx";
 
 
 //========================= [ AUTO SAVE & READ STATUS ] =========================\\
-global.read_status = process.env.AUTO_READ_STATUS || "false"
+global.read_status = process.env.AUTO_READ_STATUS || "true"
 global.save_status = process.env.AUTO_SAVE_STATUS || "false"
 global.save_status_from =  process.env.SAVE_STATUS_FROM  || "null,923xxxxxxxx";
 global.read_status_from =  process.env.READ_STATUS_FROM  ||  "923184474176,923xxxxxxxx";
